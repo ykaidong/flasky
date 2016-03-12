@@ -1,0 +1,19 @@
+<!DOCTYPE html>                                                                           
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('home.static', filename='css/style.css') }}" />
+        <!-- <script type="text/javascript" src=""></script> -->
+    </head>
+    <body>
+        <h1>这是站点的首页</h1>
+        <p>此站点的一些其它页面为:
+        <br /><a href = "{{ url_for('home.home_project') }}">prject</a>
+        <br /><a href = "{{ url_for('blog.blog_index') }}">blog</a>
+        <br /><a href = "{{ url_for('blog.blog_about') }}">blog/about</a>
+        </p>
+    </body>
+</html>
+
