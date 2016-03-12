@@ -1,7 +1,6 @@
 #!/usr/bin/python
 #coding: utf8
 
-from flask import render_template
 from flasky import app
 
 if __name__ == '__main__':
